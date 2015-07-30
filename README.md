@@ -1,6 +1,6 @@
 # paper-button-group
 
-This web component is a direct clone from the PolymerElements/paper-radio-group 
+This web component is a direct clone from the <a href="https://github.com/PolymerElements/paper-radio-group">PolymerElements/paper-radio-group</a> 
 element. Minor code parts where changed to work with paper-buttons instead of
 paper-radio-buttons.
 
@@ -19,5 +19,5 @@ Example:
 </paper-button-group>
 ```
 
-See <a href="paper-button.html">paper-button</a> for more
+See <a href="https://github.com/PolymerElements/paper-button">paper-button</a> for more
 information about `paper-button`.
