@@ -1,5 +1,4 @@
 # paper-button-group
-=================
 
 `paper-button-group` allows user to select only one button from a set.
 Checking one button that belongs to a group unchecks any
