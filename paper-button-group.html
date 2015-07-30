@@ -1,7 +1,7 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../iron-selector/iron-selectable.html">
-<link rel="import" href="../paper-button/paper-button.html">
-<link rel="import" href="../iron-a11y-keys-behavior/iron-a11y-keys-behavior.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-selector/iron-selectable.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/iron-a11y-keys-behavior/iron-a11y-keys-behavior.html">
 <!--
 `paper-button-group` allows user to select only one button from a set.
 Checking one button that belongs to a group unchecks any
@@ -25,14 +25,7 @@ information about `paper-button`.
 <dom-module name="paper-button-group">
     <style>
     :host {
-        /*display: inline-block;*/
-        margin-left: auto;
-        margin-right: auto;
         padding: 1em;
-    }
-    
-    :host::content > * {
-        padding: 12px;
     }
     </style>
     <template>
