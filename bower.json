@@ -4,6 +4,7 @@
   "authors": [
     "Roman Kaufmann <roman.kaufmann.at@gmail.com>"
   ],
+  "main": "paper-button-group.html",
   "description": "Paper Button Group element (based on paper-radio-group)",
   "license": "MIT",
   "ignore": [
