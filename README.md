@@ -20,6 +20,3 @@ Example:
   <paper-button toggles name="large">Large</paper-button>
 </paper-button-group>
 ```
-
-See <a href="https://github.com/PolymerElements/paper-button">paper-button</a> for more
-information about `paper-button`.
