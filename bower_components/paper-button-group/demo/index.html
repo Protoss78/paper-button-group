@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>paper-button-group demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/paper-material/paper-material.html">
+    <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="../paper-button-group.html">
+    <link rel="import" href="../bower_components/paper-styles/demo-pages.html">
+    <style is="custom-style">
+    .horizontal-section {
+        min-width: 200px;
+    }
+        
+    paper-button.colorful {
+        color: #4285f4;
+    }
+    
+    paper-button[raised].colorful {
+        background: #4285f4;
+        color: #fff;
+    }
+    
+    paper-button[toggles] {
+        transition: background-color 0.3s;
+    }
+    
+    paper-button[toggles][active] {
+        color: white;
+        background-color: var(--paper-green-500);
+        --paper-button-flat-focus-color: var(--paper-green-50);
+    }
+    
+    paper-button[toggles][active].colorful {
+        --paper-button-checked-color: var(--paper-green-500);
+        --paper-button-checked-ink-color: var(--paper-green-500);
+        --paper-button-unchecked-color: var(--paper-green-900);
+        --paper-button-unchecked-ink-color: var(--paper-green-900);
+    }
+    
+    paper-button[toggles][active][raised].colorful {
+        background-color: rgba(66, 133, 244, 0.75);
+    }
+    
+    paper-button.blue {
+        color: var(--paper-light-blue-500);
+        --paper-button-flat-focus-color: var(--paper-light-blue-50);
+    }
+    
+    paper-button.blue:hover {
+        background: var(--paper-light-blue-50);
+    }
+    
+    paper-button.red {
+        color: var(--paper-red-500);
+        --paper-button-flat-focus-color: var(--paper-red-50);
+    }
+    
+    paper-button.red:hover {
+        background: var(--paper-red-50);
+    }
+    
+    paper-button.green {
+        color: var(--paper-green-500);
+        --paper-button-flat-focus-color: var(--paper-green-50);
+    }
+    
+    paper-button.green:hover {
+        background: var(--paper-green-50);
+    }
+    
+    paper-button.orange {
+        color: var(--paper-orange-500);
+        --paper-button-flat-focus-color: var(--paper-orange-50);
+    }
+    
+    paper-button.orange:hover {
+        background: var(--paper-orange-50);
+    }
+    
+    paper-button.hover:hover {
+        background: #eee;
+    }
+    
+    paper-button.ripple::shadow paper-ripple {
+        color: var(--paper-pink-a200);
+    }
+    
+    paper-button.ripple paper-ripple {
+        color: var(--paper-pink-a200);
+    }
+    
+    paper-button.blue {
+        --paper-button-checked-color: var(--paper-light-blue-500);
+        --paper-button-checked-ink-color: var(--paper-light-blue-500);
+        --paper-button-unchecked-color: var(--paper-light-blue-900);
+        --paper-button-unchecked-ink-color: var(--paper-light-blue-900);
+    }
+    
+    paper-button.red {
+        --paper-button-checked-color: var(--paper-red-500);
+        --paper-button-checked-ink-color: var(--paper-red-500);
+        --paper-button-unchecked-color: var(--paper-red-900);
+        --paper-button-unchecked-ink-color: var(--paper-red-900);
+    }
+    
+    paper-button.green {
+        --paper-button-checked-color: var(--paper-green-500);
+        --paper-button-checked-ink-color: var(--paper-green-500);
+        --paper-button-unchecked-color: var(--paper-green-900);
+        --paper-button-unchecked-ink-color: var(--paper-green-900);
+    }
+    
+    paper-button.orange {
+        --paper-button-checked-color: var(--paper-orange-500);
+        --paper-button-checked-ink-color: var(--paper-orange-500);
+        --paper-button-unchecked-color: var(--paper-orange-900);
+        --paper-button-unchecked-ink-color: var(--paper-orange-900);
+    }
+
+    paper-material {
+      background-color: white;
+      @apply(--layout-vertical);
+      @apply(--layout-center-center);
+    }
+
+    .smallButton {
+      min-width: 5em;
+      /*margin: 0em;*/
+      padding: 0em;
+    }
+
+    </style>
+</head>
+
+<body unresolved>
+    <div class="horizontal-section-container">
+        <div>
+            <h4>Enabled</h4>
+            <div class="horizontal-section">
+                <paper-button-group selected="c">
+                    <paper-button name="o" toggles>Oxygen</paper-button>
+                    <paper-button name="c" toggles>Carbon</paper-button>
+                    <paper-button name="h" toggles>Hydrogen</paper-button>
+                    <paper-button name="n" toggles>Nitrogen</paper-button>
+                    <paper-button name="ca" toggles>Calcium</paper-button>
+                </paper-button-group>
+            </div>
+        </div>
+        <div>
+            <h4>Disabled</h4>
+            <div class="horizontal-section">
+                <paper-button-group selected="c">
+                    <paper-button name="o">Oxygen</paper-button>
+                    <paper-button name="c">Carbon</paper-button>
+                    <paper-button name="h" disabled>Hydrogen</paper-button>
+                    <paper-button name="n" disabled>Nitrogen</paper-button>
+                    <paper-button name="ca">Calcium</paper-button>
+                </paper-button-group>
+            </div>
+        </div>
+        <div>
+            <h4>Color</h4>
+            <div class="horizontal-section">
+                <paper-button-group selected="c">
+                    <paper-button name="o" class="blue" toggles>Oxygen</paper-button>
+                    <paper-button name="c" class="red" toggles>Carbon</paper-button>
+                    <paper-button name="h" class="orange" toggles>Hydrogen</paper-button>
+                    <paper-button name="n" class="green" toggles>Nitrogen</paper-button>
+                    <paper-button name="ca" class="blue" toggles>Calcium</paper-button>
+                </paper-button-group>
+            </div>
+        </div>
+    </div>
+    <div class="layout flex horizontal">
+        <h4>Score</h4>
+        <paper-material>
+          <paper-button-group selected="1.3" class="vertical layout flex wrap">
+              <paper-button toggles raised class="smallButton" name="0.5">0.5</paper-button>
+              <paper-button toggles raised class="smallButton" name="0.6">0.6</paper-button>
+              <paper-button toggles raised class="smallButton" name="0.7">0.7</paper-button>
+              <paper-button toggles raised class="smallButton" name="0.8">0.8</paper-button>
+              <paper-button toggles raised class="smallButton" name="0.9">0.9</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.0">1.0</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.1">1.1</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.2">1.2</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.3">1.3</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.4">1.4</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.5">1.5</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.6">1.6</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.7">1.7</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.8">1.8</paper-button>
+              <paper-button toggles raised class="smallButton" name="1.9">1.9</paper-button>
+              <paper-button toggles raised class="smallButton" name="2.0">2.0</paper-button>
+          </paper-button-group>
+        </paper-material>
+    </div>
+</body>
+
+</html>

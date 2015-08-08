@@ -1,0 +1,24 @@
+{
+  "name": "paper-button-group",
+  "version": "0.0.1",
+  "authors": [
+    "Roman Kaufmann <roman.kaufmann.at@gmail.com>"
+  ],
+  "main": "paper-button-group.html",
+  "description": "Paper Button Group element (based on paper-radio-group)",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-selector": "PolymerElements/iron-selector#~1.0.2",
+    "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#~1.0.5",
+    "paper-button": "PolymerElements/paper-button#~1.0.3",
+    "paper-material": "PolymerElements/paper-material#~1.0.1",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "paper-button-group",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Protoss78/paper-button-group",
+  "authors": [
+    "Roman Kaufmann <roman.kaufmann.at@gmail.com>"
+  ],
+  "description": "Demo page for paper-button-group",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-selector": "PolymerElements/iron-selector#~1.0.2",
+    "paper-button": "PolymerElements/paper-button#~1.0.3",
+    "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#~1.0.5",
+    "paper-button-group": "Protoss78/paper-button-group#~0.0.1"
+  }
+}
