@@ -1,6 +1,11 @@
 {
   "name": "paper-button-group",
   "version": "0.0.1",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "paper-button"
+  ],
   "authors": [
     "Roman Kaufmann <roman.kaufmann.at@gmail.com>"
   ],
