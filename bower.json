@@ -1,6 +1,6 @@
 {
   "name": "paper-button-group",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [
     "polymer",
     "web-components",
@@ -20,10 +20,43 @@
     "tests"
   ],
   "dependencies": {
-    "iron-selector": "PolymerElements/iron-selector#~1.0.2",
-    "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#~1.0.5",
-    "paper-button": "PolymerElements/paper-button#~1.0.3",
-    "paper-material": "PolymerElements/paper-material#~1.0.1",
-    "iron-flex-layout": "PolymerElements/iron-flex-layout#~1.0.2"
+    "polymer": "Polymer/polymer#1.9 - 2",
+    "iron-selector": "PolymerElements/iron-selector#1 - 2",
+    "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#1 - 2"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "web-component-tester": "^6.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#1 - 2",
+    "paper-card": "PolymerElements/paper-card#1 - 2",
+    "paper-material": "PolymerElements/paper-material#1 - 2",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#1 - 2",
+    "paper-button": "PolymerElements/paper-button#1 - 2"
+  },
+  "variants": {
+    "1.x": {
+      "dependencies": {
+        "polymer": "Polymer/polymer#^1.9.0",
+        "iron-selector": "PolymerElements/iron-selector#^1.0.0",
+        "iron-a11y-keys-behavior": "PolymerElements/iron-a11y-keys-behavior#^1.0.0"
+      },
+      "devDependencies": {
+        "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+        "web-component-tester": "^4.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+        "paper-card": "PolymerElements/paper-card#^1.0.0",
+        "paper-material": "PolymerElements/paper-material#^1.0.0",
+        "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
+        "paper-button": "PolymerElements/paper-button#1 - 2"
+      },
+      "resolutions": {
+        "webcomponentsjs": "^0.7"
+      }
+    }
+  },
+  "resolutions": {
+    "webcomponentsjs": "^1.0.0"
   }
 }
