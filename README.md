@@ -20,7 +20,8 @@ Example:
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="battery-status-icon.html">
+    <link rel="import" href="paper-button-group.html">
+    <link rel="import" href="../paper-button/paper-button.html">
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
