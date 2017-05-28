@@ -22,11 +22,11 @@ Example:
     <link rel="import" href="../paper-button/paper-button.html">
     <link rel="import" href="../paper-styles/paper-styles.html">
     <style>
-        paper-button[toggles] {
+        paper-button {
             transition: background-color 0.3s;
         }
 
-        paper-button[toggles][active] {
+        paper-button[active] {
             color: white;
             background-color: var(--paper-green-500);
             --paper-button-flat-focus-color: var(--paper-green-50);
@@ -42,11 +42,11 @@ Example:
 ```
 -->
 ```html
-<paper-button-group attr-for-selected="name" selected="c">
-    <paper-button name="o" toggles>Oxygen</paper-button>
-    <paper-button name="c" toggles>Carbon</paper-button>
-    <paper-button name="h" toggles>Hydrogen</paper-button>
-    <paper-button name="n" toggles>Nitrogen</paper-button>
-    <paper-button name="ca" toggles>Calcium</paper-button>
+<paper-button-group selected="2">
+    <paper-button>Oxygen</paper-button>
+    <paper-button>Carbon</paper-button>
+    <paper-button>Hydrogen</paper-button>
+    <paper-button>Nitrogen</paper-button>
+    <paper-button>Calcium</paper-button>
 </paper-button-group>
 ```

@@ -20,6 +20,12 @@
             transition: background-color 0.3s;
         }
 
+        paper-button[active] {
+            color: white;
+            background-color: var(--paper-green-500);
+            --paper-button-flat-focus-color: var(--paper-green-50);
+        }
+
         paper-button[toggles][active] {
             color: white;
             background-color: var(--paper-green-500);
@@ -55,11 +61,11 @@
     <demo-snippet>
         <template>
             <paper-button-group attr-for-selected="name" selected="c">
-                <paper-button name="o" toggles>Oxygen</paper-button>
-                <paper-button name="c" toggles>Carbon</paper-button>
-                <paper-button name="h" toggles>Hydrogen</paper-button>
-                <paper-button name="n" toggles>Nitrogen</paper-button>
-                <paper-button name="ca" toggles>Calcium</paper-button>
+                <paper-button name="o">Oxygen</paper-button>
+                <paper-button name="c">Carbon</paper-button>
+                <paper-button name="h">Hydrogen</paper-button>
+                <paper-button name="n">Nitrogen</paper-button>
+                <paper-button name="ca">Calcium</paper-button>
             </paper-button-group>
         </template>
     </demo-snippet>
@@ -68,11 +74,11 @@
     <demo-snippet>
         <template>
             <paper-button-group attr-for-selected="name" selected="c">
-                <paper-button name="o" toggles>Oxygen</paper-button>
-                <paper-button name="c" toggles>Carbon</paper-button>
-                <paper-button name="h" toggles disabled>Hydrogen</paper-button>
-                <paper-button name="n" toggles disabled>Nitrogen</paper-button>
-                <paper-button name="ca" toggles>Calcium</paper-button>
+                <paper-button name="o">Oxygen</paper-button>
+                <paper-button name="c">Carbon</paper-button>
+                <paper-button name="h" disabled>Hydrogen</paper-button>
+                <paper-button name="n" disabled>Nitrogen</paper-button>
+                <paper-button name="ca">Calcium</paper-button>
             </paper-button-group>
         </template>
     </demo-snippet>
@@ -88,22 +94,22 @@
                 }
             </style>
             <paper-button-group attr-for-selected="name" selected="1.3">
-                <paper-button toggles raised class="smallButton" name="0.5">0.5</paper-button>
-                <paper-button toggles raised class="smallButton" name="0.6">0.6</paper-button>
-                <paper-button toggles raised class="smallButton" name="0.7">0.7</paper-button>
-                <paper-button toggles raised class="smallButton" name="0.8">0.8</paper-button>
-                <paper-button toggles raised class="smallButton" name="0.9">0.9</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.0">1.0</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.1">1.1</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.2">1.2</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.3">1.3</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.4">1.4</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.5">1.5</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.6">1.6</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.7">1.7</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.8">1.8</paper-button>
-                <paper-button toggles raised class="smallButton" name="1.9">1.9</paper-button>
-                <paper-button toggles raised class="smallButton" name="2.0">2.0</paper-button>
+                <paper-button raised class="smallButton" name="0.5">0.5</paper-button>
+                <paper-button raised class="smallButton" name="0.6">0.6</paper-button>
+                <paper-button raised class="smallButton" name="0.7">0.7</paper-button>
+                <paper-button raised class="smallButton" name="0.8">0.8</paper-button>
+                <paper-button raised class="smallButton" name="0.9">0.9</paper-button>
+                <paper-button raised class="smallButton" name="1.0">1.0</paper-button>
+                <paper-button raised class="smallButton" name="1.1">1.1</paper-button>
+                <paper-button raised class="smallButton" name="1.2">1.2</paper-button>
+                <paper-button raised class="smallButton" name="1.3">1.3</paper-button>
+                <paper-button raised class="smallButton" name="1.4">1.4</paper-button>
+                <paper-button raised class="smallButton" name="1.5">1.5</paper-button>
+                <paper-button raised class="smallButton" name="1.6">1.6</paper-button>
+                <paper-button raised class="smallButton" name="1.7">1.7</paper-button>
+                <paper-button raised class="smallButton" name="1.8">1.8</paper-button>
+                <paper-button raised class="smallButton" name="1.9">1.9</paper-button>
+                <paper-button raised class="smallButton" name="2.0">2.0</paper-button>
             </paper-button-group>
         </template>
     </demo-snippet>
@@ -177,11 +183,11 @@
                 }
             </style>
             <paper-button-group attr-for-selected="name" selected="c">
-                <paper-button name="o" class="blue" toggles>Oxygen</paper-button>
-                <paper-button name="c" class="red" toggles>Carbon</paper-button>
-                <paper-button name="h" class="orange" toggles>Hydrogen</paper-button>
-                <paper-button name="n" class="green" toggles>Nitrogen</paper-button>
-                <paper-button name="ca" class="blue" toggles>Calcium</paper-button>
+                <paper-button name="o" class="blue">Oxygen</paper-button>
+                <paper-button name="c" class="red">Carbon</paper-button>
+                <paper-button name="h" class="orange">Hydrogen</paper-button>
+                <paper-button name="n" class="green">Nitrogen</paper-button>
+                <paper-button name="ca" class="blue">Calcium</paper-button>
             </paper-button-group>
         </template>
     </demo-snippet>
