@@ -20,6 +20,7 @@ Example:
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="paper-button-group.html">
     <link rel="import" href="../paper-button/paper-button.html">
+    <link rel="import" href="../paper-styles/paper-styles.html">
     <style>
         paper-button[toggles] {
             transition: background-color 0.3s;
